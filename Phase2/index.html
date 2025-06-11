@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg" href="SM Logo fevicon  png.png" sizes="16x16">
+        <title>Sai's DesignSystem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../Phase2css.css" rel="stylesheet">
+
+       <!--Fonts-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-success border-bottom-0 sticky-top ">
+        <!-- Navbar toggle button (hamburger icon) -->
+        
+            
+            <button class="navbar-toggler d-block d-md-none navbar-hieght"
+                type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#sidebar"
+                aria-controls="sidebar">
+                 <span class="navbar-toggler-icon"></span>
+              
+            </button>
+       
+
+    </nav>
+<!-- This topbar toggle to the off canvas -->
+    <div class="offcanvas offcanvas-start bg-success d-md-block" 
+        tabindex="-1" id="sidebar"
+        aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+          
+         <div class = "d-flex align-items-center pb-3 border-bottom" >
+          <div class="logo-container">
+                            <a href="index.html"><img src="SM Logo fevicon  png.png"  alt="Sainath Logo" class="sailogo"></a>
+                          </div>
+         </div>
+            <button type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+            </button>
+        </div>
+        <div class="offcanvas-body ">
+            <ul class="nav flex-column">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                      data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                      Foundations
+                      </button>
+                      <div class="collapse" id="foundations-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="foundation/type.html" class="link-dark d-inline-flex text-decoration-none rounded">Typography</a></li>
+                          <li><a href="foundation/color.html" class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+                          <li><a href="foundation/logo.html" class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                         Components
+                        </button>
+                        <div class="collapse" id="components-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="components/navbar.html" class="link-dark d-inline-flex text-decoration-none rounded">Navbar</a></li>
+                            <li><a href="components/cards.html" class="link-dark d-inline-flex text-decoration-none rounded">Card</a></li>
+                            <li><a href="components/footer.html" class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+                     
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                        data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                          Page Patterns
+                        </button>
+                        <div class="collapse" id="patterns-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="patterns/page1.html" class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                            <li><a href="patterns/page2.html" class="link-dark d-inline-flex text-decoration-none rounded">About</a></li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+<!-- This is the sidebar menu -->
+    <div class="container-fluid ">
+        <div class="row">
+            <nav id="sidebarMenu"
+                class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar shadow">
+                <div class="position-sticky bg-success vh-100">
+                    <div class="pt-3">
+                        <div class = "d-flex align-items-center pb-3 mb-3 border-bottom" >
+                          <div class="logo-container">
+                            <a href="index.html"><img src="SM Logo fevicon  png.png"  alt="Sainath Logo" class="sailogo"></a>
+                          </div>
+                        </div>
+                        <ul class="nav flex-column"> 
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                                  data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                                  Foundations
+                                  </button>
+                                  <div class="collapse" id="foundations-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                      <li><a href="foundation/type.html" class="link-dark d-inline-flex text-decoration-none rounded">Typography</a></li>
+                                      <li><a href="foundation/color.html" class="link-dark d-inline-flex text-decoration-none rounded">Color</a></li>
+                                      <li><a href="foundation/logo.html" class="link-dark d-inline-flex text-decoration-none rounded">Logo</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                                    data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                                     Components
+                                    </button>
+                                    <div class="collapse" id="components-collapse">
+                                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="components/navbar.html" class="link-dark d-inline-flex text-decoration-none rounded">Navbar</a></li>
+                                        <li><a href="components/cards.html" class="link-dark d-inline-flex text-decoration-none rounded">Card</a></li>
+                                        <li><a href="components/footer.html" class="link-dark d-inline-flex text-decoration-none rounded">Footer</a></li>
+                                 
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="mb-1">
+                                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" 
+                                    data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                                      Page Patterns
+                                    </button>
+                                    <div class="collapse" id="patterns-collapse">
+                                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="patterns/page1.html" class="link-dark d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                                        <li><a href="patterns/page2.html" class="link-dark d-inline-flex text-decoration-none rounded">About</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+          
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+              <!-- Page Content  -->
+               <div class = "container-fluid overflow-auto" style="padding-top: 40px">
+                   <div class = "row p-5">
+                    <div id="content">
+                      <h4>HCI 472 - Design System Phase Two</h4>
+                    <h2 class="textcolor">Sainath Mailure</h2>
+                    <b>About</b>
+        <p>This site serves as the documentation for the design system I created for my personal portfolio. It reflects my personality
+        </p>
+
+        <b>Foundations</b>
+        <p>This section outlines the core design principles behind the system, including a clear typographic hierarchy, a carefully selected color palette, and different logo variations. These foundational choices help ensure visual consistency and express the brand's tone across all pages.</p>
+
+        <b>Components</b>
+        <p>Here, you’ll find reusable interface elements such as navigation bars, footers, and cards. Each component is designed to be functional, flexible, and visually consistent, making them easy to implement across different parts of the portfolio.</p>
+
+        <b>Page Patterns</b>
+        <p>This section showcases layout guidelines for multiple views of the homepage and a project page. These patterns help maintain structure and clarity while allowing flexibility in how content is presented.</p>
+                      
+
+                    </div></div></div>
+         </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </script>
+</body>
+
+</html>
