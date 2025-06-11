@@ -1,0 +1,359 @@
+body, html {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-width: 500px;
+}
+/* 
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+} */
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+      display: none;
+  }
+}
+
+.nav{
+  padding-top: 10px;
+}
+
+.offcanvas, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-width: 250px;
+  
+}
+
+/*fonts*/
+h1{
+  font-size: 5.61rem;
+  font-weight: 500;
+  font-family: "Roboto", serif;
+}
+
+h2{
+  font-size: 4.209rem;
+  font-weight: 450;
+  font-family: "Roboto", serif;
+}
+
+h3{
+  font-size: 3.157rem;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+}
+
+h4{
+  font-size: 2.369rem;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+
+/* This is your side bar and top bar color - customize */
+.bg-success{
+  --bs-bg-opacity: 1;
+  background-color:#3A225E !important;
+ 
+}
+
+/* This is your side bar right and left margin color - customize */
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: #3A225E !important; 
+ 
+}
+
+.offCanvas-home {
+  font-size: 18px;
+
+
+}
+.navbar-light{
+  background-color: #3A225E !important;
+}
+
+.navbar {
+  padding-left: 10px;
+}
+
+/* change the hieght of the navbar icon if you want */
+.navbar-hieght{
+  height: 60px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  font-weight:500;
+  color:#ffffff;
+  background-color: transparent;
+}
+
+/* this is the background color for the main areas in the sidebar- customize */
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: #d0d0d0;
+   background-color: none; 
+}
+
+/* this is the background color for the sub areas in the sidebar- customize */
+
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:active {
+   background-color: #e6f5f248; 
+   color: #E6F5F2;
+}
+
+
+
+.activeLink{
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: #e2e2e2;
+  background-color: none; 
+}
+
+
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='WHITE' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+
+}
+.btn-toggle[aria-expanded="false"] {
+  color: white;
+}
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(239, 239, 239, 0.85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  color: white !important;
+
+}
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center !important; /* Centers vertically */
+  height: 150px; /* Set height for vertical centering */
+  width: 100%;
+}
+
+.sailogo {
+  max-width: 50% !important; /* Ensures image resizes properly */
+  height: auto;
+}
+
+.textcolor{
+  color: #3A225E;
+}
+.secondarytextcolor{
+  color: #f4f4f4;
+}
+
+.centertext{
+  text-align: center;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+.code-background{
+  background-color: rgba(213, 213, 213, 0.363);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 1px 1px 1px;
+
+}
+
+.page-link{
+  color: grey;
+}
+
+.pagination {
+  --bs-pagination-hover-color: #222;
+  --bs-pagination-hover-bg: #d0b7f6;;
+  --bs-pagination-active-color: #222;
+  --bs-pagination-active-bg: #d0b7f6;
+  --bs-pagination-active-border-color: #222;
+
+}
+
+
+
+/*Color palette*/
+.primarycolor{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #1A1A2E;
+}
+
+.secondarycolor{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #F7D54E;
+
+}
+
+.cpink{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #FF86E9;
+}
+
+.ccream{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #FFF8E1;
+}
+
+.cwhite{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #FAFAFA;
+}
+
+.cblack{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #1D1D1D;
+}
+
+.cgrey{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #D1D1D1;
+}
+
+.cdgrey{
+  height: 200px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #646464;
+}
+
+/* Cards */
+.card{
+  max-height: fit-content;
+  max-width: fit-content;
+  display: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.samplecard{
+  border-radius: 16px 16px 16px 16px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.cardcontent{
+  border-radius: 0px 0px 16px 16px;
+  padding: 10px;
+  text-align: left;
+  text-decoration-color: #fcfcfc;
+}
+
+.darkmode{
+  background-color: #ffffff;
+  color: #343434;
+}
+
+.defined{
+  background-color: #2F2F2F;
+  color: #FAFAFA;
+  text-align: left;
+  border-radius: 16px;
+}
+
+.textcontainer{
+  padding: 8px 24px 8px 24px;
+  display: inline-block;
+  border: 2px solid #d0b7f6;
+  border-radius: 12px;
+  word-wrap: break-word;
+}
+
+.button{
+  border-radius: 12px;
+  background-color: #d0b7f6;
+  color: #FAFAFA;
+}
+.button:hover{
+  background-color: #FAFAFA;
+  color: #d0b7f6;
+  border: 2px solid #d0b7f6;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px #d0b7f6;
+}
+.button:disabled{
+  background-color: #E3E3E3;
+  color: #2F2F2F;
+  border: 2px solid #2F2F2F !important;
+  border-radius: 12px;
+}
+
+.image img{
+  padding: 24px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
